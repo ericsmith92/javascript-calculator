@@ -12,6 +12,9 @@ let argsArray = [];
 /*FUNCTIONALITY*/
 //write input from number keys to screen
 function toScreen(){
+    if(screen.innerHTML === 'Err' || screen.innerHTML === 'NaN'){
+        screen.innerHTML = '';
+    }
     screen.innerHTML += this.dataset.num;
 }
 
